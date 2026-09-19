@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Literature Quiz</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#080b16;
+  color:white;
+}
+
+.container{
+  max-width:750px;
+  margin:auto;
+  padding:16px;
+}
+
+.header{
+  text-align:center;
+  padding:25px 15px;
+  margin-bottom:20px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#29205c,#172c55);
+  box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.header h1{
+  margin:0;
+  font-size:27px;
+}
+
+.header p{
+  color:#c9cbea;
+}
+
+.section{
+  margin:25px 0 15px;
+  padding:15px;
+  border-radius:14px;
+  background:#25204a;
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.question{
+  background:#141827;
+  padding:17px;
+  margin-bottom:16px;
+  border-radius:15px;
+  border:1px solid #292d48;
+}
+
+.question h3{
+  margin-top:0;
+  font-size:16px;
+  line-height:1.5;
+}
+
+label{
+  display:block;
+  background:#1c2032;
+  padding:12px;
+  margin:8px 0;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+label:hover{
+  background:#292e48;
+}
+
+input{
+  margin-right:8px;
+}
+
+.correct{
+  background:#15472d !important;
+  border:2px solid #39db7c;
+}
+
+.wrong{
+  background:#502323 !important;
+  border:2px solid #ff5c5c;
+}
+
+.answer{
+  margin-top:10px;
+  padding:10px;
+  border-radius:9px;
+  background:#153c29;
+  color:#72eea0;
+  font-weight:bold;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  border:0;
+  border-radius:13px;
+  background:#6857e8;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+#result{
+  display:none;
+  text-align:center;
+  margin:20px 0;
+  padding:22px;
+  border-radius:16px;
+  background:#171b31;
+}
+
+.score{
+  font-size:30px;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  margin-top:25px;
+  color:#777b9b;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>📚 English Literature Quiz</h1>
+<p>Daffodils & The Nightingale and the Rose</p>
+<p>50 MCQ Questions • +2 Level</p>
+</div>
+
+<div id="quiz">
+
+<div class="section">🌼 Daffodils — Questions 1–25</div>
+
+<div class="question">
+<h3>1. Who wrote the poem “Daffodils”?</h3>
+<label><input type="radio" name="q1" value="A"> A. William Wordsworth</label>
+<label><input type="radio" name="q1" value="B"> B. Oscar Wilde</label>
+<label><input type="radio" name="q1" value="C"> C. John Keats</label>
+<label><input type="radio" name="q1" value="D"> D. William Shakespeare</label>
+</div>
+
+<div class="question">
+<h3>2. What is another title of “Daffodils”?</h3>
+<label><input type="radio" name="q2" value="A"> A. The Solitary Reaper</label>
+<label><input type="radio" name="q2" value="B"> B. I Wandered Lonely as a Cloud</label>
+<label><input type="radio" name="q2" value="C"> C. Tintern Abbey</label>
+<label><input type="radio" name="q2" value="D"> D. Ode to Autumn</label>
+</div>
+
+<div class="question">
+<h3>3. What does the poet compare himself to at the beginning?</h3>
+<label><input type="radio" name="q3" value="A"> A. A bird</label>
+<label><input type="radio" name="q3" value="B"> B. A cloud</label>
+<label><input type="radio" name="q3" value="C"> C. A flower</label>
+<label><input type="radio" name="q3" value="D"> D. A star</label>
+</div>
+
+<div class="question">
+<h3>4. Where did the poet see the daffodils?</h3>
+<label><input type="radio" name="q4" value="A"> A. Beside a lake</label>
+<label><input type="radio" name="q4" value="B"> B. On a mountain</label>
+<label><input type="radio" name="q4" value="C"> C. In a garden</label>
+<label><input type="radio" name="q4" value="D"> D. Near a village</label>
+</div>
+
+<div class="question">
+<h3>5. What were the daffodils doing?</h3>
+<label><input type="radio" name="q5" value="A"> A. Sleeping</label>
+<label><input type="radio" name="q5" value="B"> B. Dancing</label>
+<label><input type="radio" name="q5" value="C"> C. Falling</label>
+<label><input type="radio" name="q5" value="D"> D. Growing slowly</label>
+</div>
+
+<div class="question">
+<h3>6. What did the waves do beside the flowers?</h3>
+<label><input type="radio" name="q6" value="A"> A. They became silent</label>
+<label><input type="radio" name="q6" value="B"> B. They danced</label>
+<label><input type="radio" name="q6" value="C"> C. They disappeared</label>
+<label><input type="radio" name="q6" value="D"> D. They stopped</label>
+</div>
+
+<div class="question">
+<h3>7. What did the daffodils outdo?</h3>
+<label><input type="radio" name="q7" value="A"> A. The birds</label>
+<label><input type="radio" name="q7" value="B"> B. The trees</label>
+<label><input type="radio" name="q7" value="C"> C. The sparkling waves</label>
+<label><input type="radio" name="q7" value="D"> D. The clouds</label>
+</div>
+
+<div class="question">
+<h3>8. What was the poet’s mood before seeing the daffodils?</h3>
+<label><input type="radio" name="q8" value="A"> A. Lonely</label>
+<label><input type="radio" name="q8" value="B"> B. Excited</label>
+<label><input type="radio" name="q8" value="C"> C. Angry</label>
+<label><input type="radio" name="q8" value="D"> D. Proud</label>
+</div>
+
+<div class="question">
+<h3>9. What is meant by “continuous as the stars that shine”?</h3>
+<label><input type="radio" name="q9" value="A"> A. The flowers were few</label>
+<label><input type="radio" name="q9" value="B"> B. The flowers appeared endless</label>
+<label><input type="radio" name="q9" value="C"> C. The flowers were dark</label>
+<label><input type="radio" name="q9" value="D"> D. The flowers were artificial</label>
+</div>
+
+<div class="question">
+<h3>10. How many daffodils does the poet estimate?</h3>
+<label><input type="radio" name="q10" value="A"> A. Ten thousand</label>
+<label><input type="radio" name="q10" value="B"> B. Five thousand</label>
+<label><input type="radio" name="q10" value="C"> C. One thousand</label>
+<label><input type="radio" name="q10" value="D"> D. One hundred</label>
+</div>
+
+<div class="question">
+<h3>11. What is the setting of the poem mainly associated with?</h3>
+<label><input type="radio" name="q11" value="A"> A. Nature</label>
+<label><input type="radio" name="q11" value="B"> B. War</label>
+<label><input type="radio" name="q11" value="C"> C. A city</label>
+<label><input type="radio" name="q11" value="D"> D. A palace</label>
+</div>
+
+<div class="question">
+<h3>12. What did the poet feel when he saw the flowers?</h3>
+<label><input type="radio" name="q12" value="A"> A. Happiness</label>
+<label><input type="radio" name="q12" value="B"> B. Fear</label>
+<label><input type="radio" name="q12" value="C"> C. Anger</label>
+<label><input type="radio" name="q12" value="D"> D. Confusion</label>
+</div>
+
+<div class="question">
+<h3>13. Where did the flowers grow?</h3>
+<label><input type="radio" name="q13" value="A"> A. Along the lake</label>
+<label><input type="radio" name="q13" value="B"> B. Inside a house</label>
+<label><input type="radio" name="q13" value="C"> C. On a road</label>
+<label><input type="radio" name="q13" value="D"> D. In a forest only</label>
+</div>
+
+<div class="question">
+<h3>14. What is the “Milky Way” used to compare the flowers with?</h3>
+<label><input type="radio" name="q14" value="A"> A. Their brightness and number</label>
+<label><input type="radio" name="q14" value="B"> B. Their smell</label>
+<label><input type="radio" name="q14" value="C"> C. Their height</label>
+<label><input type="radio" name="q14" value="D"> D. Their colour only</label>
+</div>
+
+<div class="question">
+<h3>15. What did the poet do later when he was alone?</h3>
+<label><input type="radio" name="q15" value="A"> A. He remembered the daffodils</label>
+<label><input type="radio" name="q15" value="B"> B. He forgot the flowers</label>
+<label><input type="radio" name="q15" value="C"> C. He went to sleep</label>
+<label><input type="radio" name="q15" value="D"> D. He wrote a letter</label>
+</div>
+
+<div class="question">
+<h3>16. What does “inward eye” refer to?</h3>
+<label><input type="radio" name="q16" value="A"> A. Imagination and memory</label>
+<label><input type="radio" name="q16" value="B"> B. Physical eyesight</label>
+<label><input type="radio" name="q16" value="C"> C. A dream only</label>
+<label><input type="radio" name="q16" value="D"> D. A painting</label>
+</div>
+
+<div class="question">
+<h3>17. What happens to the poet’s heart when he remembers the daffodils?</h3>
+<label><input type="radio" name="q17" value="A"> A. It becomes sad</label>
+<label><input type="radio" name="q17" value="B"> B. It fills with pleasure</label>
+<label><input type="radio" name="q17" value="C"> C. It becomes angry</label>
+<label><input type="radio" name="q17" value="D"> D. It becomes fearful</label>
+</div>
+
+<div class="question">
+<h3>18. What is one major theme of the poem?</h3>
+<label><input type="radio" name="q18" value="A"> A. The healing power of nature</label>
+<label><input type="radio" name="q18" value="B"> B. War</label>
+<label><input type="radio" name="q18" value="C"> C. Politics</label>
+<label><input type="radio" name="q18" value="D"> D. Wealth</label>
+</div>
+
+<div class="question">
+<h3>19. The daffodils are personified as:</h3>
+<label><input type="radio" name="q19" value="A"> A. Dancing</label>
+<label><input type="radio" name="q19" value="B"> B. Sleeping</label>
+<label><input type="radio" name="q19" value="C"> C. Crying</label>
+<label><input type="radio" name="q19" value="D"> D. Talking</label>
+</div>
+
+<div class="question">
+<h3>20. Who is the poet of “Daffodils”?</h3>
+<label><input type="radio" name="q20" value="A"> A. William Wordsworth</label>
+<label><input type="radio" name="q20" value="B"> B. Robert Frost</label>
+<label><input type="radio" name="q20" value="C"> C. Oscar Wilde</label>
+<label><input type="radio" name="q20" value="D"> D. William Blake</label>
+</div>
+
+<div class="question">
+<h3>21. What kind of poem is “Daffodils” mainly?</h3>
+<label><input type="radio" name="q21" value="A"> A. A nature poem</label>
+<label><input type="radio" name="q21" value="B"> B. A war poem</label>
+<label><input type="radio" name="q21" value="C"> C. A political poem</label>
+<label><input type="radio" name="q21" value="D"> D. A comic poem</label>
+</div>
+
+<div class="question">
+<h3>22. What does nature provide the poet?</h3>
+<label><input type="radio" name="q22" value="A"> A. Joy and peace</label>
+<label><input type="radio" name="q22" value="B"> A. Money</label>
+<label><input type="radio" name="q22" value="C"> A. Fame</label>
+<label><input type="radio" name="q22" value="D"> A. Power</label>
+</div>
+
+<div class="question">
+<h3>23. The poet was wandering:</h3>
+<label><input type="radio" name="q23" value="A"> A. Like a lonely cloud</label>
+<label><input type="radio" name="q23" value="B"> A. Like a bird</label>
+<label><input type="radio" name="q23" value="C"> A. Like a river</label>
+<label><input type="radio" name="q23" value="D"> A. Like a tree</label>
+</div>
+
+<div class="question">
+<h3>24. The daffodils are described as:</h3>
+<label><input type="radio" name="q24" value="A"> A. Golden</label>
+<label><input type="radio" name="q24" value="B"> A. Black</label>
+<label><input type="radio" name="q24" value="C"> A. Blue</label>
+<label><input type="radio" name="q24" value="D"> A. Red</label>
+</div>
+
+<div class="question">
+<h3>25. What remains with the poet after the experience?</h3>
+<label><input type="radio" name="q25" value="A"> A. A joyful memory</label>
+<label><input type="radio" name="q25" value="B"> A. Fear</label>
+<label><input type="radio" name="q25" value="C"> A. Anger</label>
+<label><input type="radio" name="q25" value="D"> A. Regret</label>
+</div>
+
+
+<div class="section">🌹 The Nightingale and the Rose — Questions 26–50</div>
+
+<div class="question">
+<h3>26. Who wrote “The Nightingale and the Rose”?</h3>
+<label><input type="radio" name="q26" value="A"> A. Oscar Wilde</label>
+<label><input type="radio" name="q26" value="B"> A. William Wordsworth</label>
+<label><input type="radio" name="q26" value="C"> A. John Keats</label>
+<label><input type="radio" name="q26" value="D"> A. Charles Dickens</label>
+</div>
+
+<div class="question">
+<h3>27. What does the Student want?</h3>
+<label><input type="radio" name="q27" value="A"> A. A red rose</label>
+<label><input type="radio" name="q27" value="B"> A. A golden ring</label>
+<label><input type="radio" name="q27" value="C"> A. A book</label>
+<label><input type="radio" name="q27" value="D"> A. A bird</label>
+</div>
+
+<div class="question">
+<h3>28. Why does the Student need the rose?</h3>
+<label><input type="radio" name="q28" value="A"> A. To attend a dance with the Professor's daughter</label>
+<label><input type="radio" name="q28" value="B"> A. To sell it</label>
+<label><input type="radio" name="q28" value="C"> A. To decorate his room</label>
+<label><input type="radio" name="q28" value="D"> A. To give it to his teacher</label>
+</div>
+
+<div class="question">
+<h3>29. Who hears the Student crying?</h3>
+<label><input type="radio" name="q29" value="A"> A. The Nightingale</label>
+<label><input type="radio" name="q29" value="B"> A. The Professor</label>
+<label><input type="radio" name="q29" value="C"> A. The Prince</label>
+<label><input type="radio" name="q29" value="D"> A. The Student's friend</label>
+</div>
+
+<div class="question">
+<h3>30. What does the Nightingale believe about love?</h3>
+<label><input type="radio" name="q30" value="A"> A. Love is more precious than life</label>
+<label><input type="radio" name="q30" value="B"> A. Love is worthless</label>
+<label><input type="radio" name="q30" value="C"> A. Love is always easy</label>
+<label><input type="radio" name="q30" value="D"> A. Love is only about money</label>
+</div>
+
+<div class="question">
+<h3>31. Why can't the first rose tree provide a red rose?</h3>
+<label><input type="radio" name="q31" value="A"> A. It has white roses</label>
+<label><input type="radio" name="q31" value="B"> A. It has no leaves</label>
+<label><input type="radio" name="q31" value="C"> A. It is too small</label>
+<label><input type="radio" name="q31" value="D"> A. It is dead</label>
+</div>
+
+<div class="question">
+<h3>32. Why can't the second rose tree help?</h3>
+<label><input type="radio" name="q32" value="A"> A. Its roses are yellow</label>
+<label><input type="radio" name="q32" value="B"> A. It has no flowers</label>
+<label><input type="radio" name="q32" value="C"> A. It is in another garden</label>
+<label><input type="radio" name="q32" value="D"> A. It is broken</label>
+</div>
+
+<div class="question">
+<h3>33. What does the third rose tree say it needs?</h3>
+<label><input type="radio" name="q33" value="A"> A. Music</label>
+<label><input type="radio" name="q33" value="B"> A. Blood</label>
+<label><input type="radio" name="q33" value="C"> A. Water</label>
+<label><input type="radio" name="q33" value="D"> A. Sunlight</label>
+</div>
+
+<div class="question">
+<h3>34. Who sacrifices itself to create the red rose?</h3>
+<label><input type="radio" name="q34" value="A"> A. The Nightingale</label>
+<label><input type="radio" name="q34" value="B"> A. The Student</label>
+<label><input type="radio" name="q34" value="C"> A. The Professor</label>
+<label><input type="radio" name="q34" value="D"> A. The girl</label>
+</div>
+
+<div class="question">
+<h3>35. What does the Nightingale do during the night?</h3>
+<label><input type="radio" name="q35" value="A"> A. Sings</label>
+<label><input type="radio" name="q35" value="B"> A. Sleeps</label>
+<label><input type="radio" name="q35" value="C"> A. Flies away</label>
+<label><input type="radio" name="q35" value="D"> A. Searches for food</label>
+</div>
+
+<div class="question">
+<h3>36. What does the Nightingale press against the rose tree?</h3>
+<label><input type="radio" name="q36" value="A"> A. Its breast</label>
+<label><input type="radio" name="q36" value="B"> A. Its wing</label>
+<label><input type="radio" name="q36" value="C"> A. Its foot</label>
+<label><input type="radio" name="q36" value="D"> A. Its head</label>
+</div>
+
+<div class="question">
+<h3>37. What colour does the rose become?</h3>
+<label><input type="radio" name="q37" value="A"> A. Red</label>
+<label><input type="radio" name="q37" value="B"> A. Blue</label>
+<label><input type="radio" name="q37" value="C"> A. Yellow</label>
+<label><input type="radio" name="q37" value="D"> A. White</label>
+</div>
+
+<div class="question">
+<h3>38. What happens to the Nightingale at the end?</h3>
+<label><input type="radio" name="q38" value="A"> A. It dies</label>
+<label><input type="radio" name="q38" value="B"> A. It flies away happily</label>
+<label><input type="radio" name="q38" value="C"> A. It becomes a rose</label>
+<label><input type="radio" name="q38" value="D"> A. It meets the Student</label>
+</div>
+
+<div class="question">
+<h3>39. What does the Student do with the rose?</h3>
+<label><input type="radio" name="q39" value="A"> A. Takes it to the girl</label>
+<label><input type="radio" name="q39" value="B"> A. Throws it into the river</label>
+<label><input type="radio" name="q39" value="C"> A. Gives it to the Nightingale</label>
+<label><input type="radio" name="q39" value="D"> A. Keeps it at home</label>
+</div>
+
+<div class="question">
+<h3>40. What does the Professor's daughter ask for?</h3>
+<label><input type="radio" name="q40" value="A"> A. Jewels</label>
+<label><input type="radio" name="q40" value="B"> A. A rose only</label>
+<label><input type="radio" name="q40" value="C"> A. A book</label>
+<label><input type="radio" name="q40" value="D"> A. A song</label>
+</div>
+
+<div class="question">
+<h3>41. Why does the girl reject the Student?</h3>
+<label><input type="radio" name="q41" value="A"> A. Another man has given her jewels</label>
+<label><input type="radio" name="q41" value="B"> A. She dislikes roses</label>
+<label><input type="radio" name="q41" value="C"> A. She does not attend the dance</label>
+<label><input type="radio" name="q41" value="D"> A. She is angry with the Student</label>
+</div>
+
+<div class="question">
+<h3>42. What does the Student do after being rejected?</h3>
+<label><input type="radio" name="q42" value="A"> A. Throws the rose away</label>
+<label><input type="radio" name="q42" value="B"> A. Keeps it safely</label>
+<label><input type="radio" name="q42" value="C"> A. Gives it to the girl again</label>
+<label><input type="radio" name="q42" value="D"> A. Plants it</label>
+</div>
+
+<div class="question">
+<h3>43. Where does the Student throw the rose?</h3>
+<label><input type="radio" name="q43" value="A"> A. Into the street</label>
+<label><input type="radio" name="q43" value="B"> A. Into the river</label>
+<label><input type="radio" name="q43" value="C"> A. Into the garden</label>
+<label><input type="radio" name="q43" value="D"> A. Into the classroom</label>
+</div>
+
+<div class="question">
+<h3>44. What does the Student decide to study instead of love?</h3>
+<label><input type="radio" name="q44" value="A"> A. Metaphysics</label>
+<label><input type="radio" name="q44" value="B"> A. Biology</label>
+<label><input type="radio" name="q44" value="C"> A. History</label>
+<label><input type="radio" name="q44" value="D"> A. Chemistry</label>
+</div>
+
+<div class="question">
+<h3>45. What does the story suggest about the Student's understanding of love?</h3>
+<label><input type="radio" name="q45" value="A"> A. He fails to understand its deeper meaning</label>
+<label><input type="radio" name="q45" value="B"> A. He understands it perfectly</label>
+<label><input type="radio" name="q45" value="C"> A. He never thinks about it</label>
+<label><input type="radio" name="q45" value="D"> A. He becomes a poet</label>
+</div>
+
+<div class="question">
+<h3>46. Which character represents idealistic love?</h3>
+<label><input type="radio" name="q46" value="A"> A. The Nightingale</label>
+<label><input type="radio" name="q46" value="B"> A. The Professor</label>
+<label><input type="radio" name="q46" value="C"> A. The Student</label>
+<label><input type="radio" name="q46" value="D"> A. The Professor's daughter</label>
+</div>
+
+<div class="question">
+<h3>47. Which theme is central to the story?</h3>
+<label><input type="radio" name="q47" value="A"> A. Love and sacrifice</label>
+<label><input type="radio
